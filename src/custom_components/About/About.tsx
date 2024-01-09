@@ -20,7 +20,7 @@ const About: FC<AboutProps> = ({content, language}) => {
           switch(key.length) {
             case 1: {
               return (
-                <li key = {key}>
+                <li className="about-title" key={key}>
                   <p>
                     <strong>
                       {content[language][key]}
@@ -31,7 +31,7 @@ const About: FC<AboutProps> = ({content, language}) => {
             }
             case 3: {
               return(
-              <li key = {key}>
+              <li key={key}>
                 <p>
                   {content[language][key]}
                 </p>
@@ -40,7 +40,7 @@ const About: FC<AboutProps> = ({content, language}) => {
             }
             case 5: {
               return(
-              <li key = {key}>
+              <li className="de-facto-li" key={key}>
                 <p>
                   {content[language][key]}
                 </p>

@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import images from '../../base64_images/base64_images.ts';
 
 interface PresentationProps {
   content: { 
@@ -21,10 +22,11 @@ const Presentation: FC<PresentationProps> = ({content, language}) => {
     <article>
       <ul>
         {keys.map((key: string) => {
+                    
           switch (key.length) {
             case 1: {
               return (
-                <li key={key}>
+                <li key={key} className = "hidden">
                   <h1>
                     <strong>{key + ' ' + content[language][key]}</strong>
                   </h1>
@@ -33,21 +35,28 @@ const Presentation: FC<PresentationProps> = ({content, language}) => {
             }
             case 3: {
               return (
-                <li key={key}>
+                <li key={key} className = "hidden">
                   <p>
-                    {key + ' ' + content[language][key]}
+                    <strong style={{ color: 'var(--main-details-color)' }}>{key}</strong>{' ' + content[language][key]}
                   </p>
                 </li>
               );
             }
             case 5: {
               return (
-                <li key={key}>
+                <li key={key} className = "hidden">
                   <p>
                     {content[language][key]}
                   </p>
                 </li>
               );
+            }
+            case 7: {
+              return (
+                <div key={key} className="image-holder hidden">
+                  <img src={images[language][key]}></img>
+                </div>
+              )
             }
           }
         })}

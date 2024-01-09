@@ -1,9 +1,14 @@
+:root {
+  --main-details-color: rgba(255, 0, 0, 0.852);
+}
+
+
 button {
-  border: solid red 0.1rem;
-  color: red;
+  border: solid var(--main-details-color) 0.1rem;
+  color: var(--main-details-color);
 }
 
 .page-shifter {
-  border: solid red 0.1rem;
-  color: red; 
+  border: solid var(--main-details-color) 0.1rem;
+  color: var(--main-details-color); 
 }
