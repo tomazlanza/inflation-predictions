@@ -1,6 +1,7 @@
 {
   "name": "inflation-predictions",
-  "private": true,
+  "homepage": "https://tomazlanza.github.io/inflation-predictions/",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
