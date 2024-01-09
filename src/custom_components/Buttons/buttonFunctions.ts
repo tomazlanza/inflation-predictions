@@ -1,26 +1,26 @@
-import { renderPage } from '../../App';
-import { currentPage, selectedLanguage, languageShifter } from "./Buttons";
+// // import { renderPage } from '../../App';
+// import { currentPage, selectedLanguage, languageShifter } from "./Buttons";
 
 
-interface buttonFunctionsType {
-  [typeOfFunction: string]: Function;
-}
+// interface buttonFunctionsType {
+//   [typeOfFunction: string]: Function;
+// }
 
-const buttonFunctions: buttonFunctionsType = {
-  'pageShifter': () => {
-    renderPage(currentPage, selectedLanguage);
-  },
+// const buttonFunctions: buttonFunctionsType = {
+//   'pageShifter': () => {
+//     renderPage(currentPage, selectedLanguage);
+//   },
   
-  'downloadFunction': () => {
-    return;
-  },
+//   'downloadFunction': () => {
+//     return;
+//   },
 
-  'languageFunction': () => {
-    languageShifter();
-    renderPage(currentPage, selectedLanguage);
-  },
-}
+//   'languageFunction': () => {
+//     languageShifter();
+//     renderPage(currentPage, selectedLanguage);
+//   },
+// }
 
-// export type ButtonFunctionsMethods = keyof typeof buttonFunctions
+// // export type ButtonFunctionsMethods = keyof typeof buttonFunctions
 
-export default buttonFunctions;
+// export default buttonFunctions;

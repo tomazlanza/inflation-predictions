@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import images from '../../base64_images/base64_images.ts';
 
 interface PresentationProps {

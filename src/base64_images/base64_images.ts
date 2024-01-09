@@ -1,4 +1,4 @@
-const reader = new FileReader();
+// const reader = new FileReader();
 
 //the paths below refer to Presentation.tsx location
 const bacenPathPort = '../../../public/png//BACEN_pt-br.png'
