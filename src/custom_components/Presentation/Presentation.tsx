@@ -26,7 +26,7 @@ const Presentation: FC<PresentationProps> = ({content, language}) => {
           switch (key.length) {
             case 1: {
               return (
-                <li key={key} className = "hidden">
+                <li key={key}>
                   <h1>
                     <strong>{key + ' ' + content[language][key]}</strong>
                   </h1>
@@ -35,7 +35,7 @@ const Presentation: FC<PresentationProps> = ({content, language}) => {
             }
             case 3: {
               return (
-                <li key={key} className = "hidden">
+                <li key={key}>
                   <p>
                     <strong style={{ color: 'var(--main-details-color)' }}>{key}</strong>{' ' + content[language][key]}
                   </p>
@@ -44,7 +44,7 @@ const Presentation: FC<PresentationProps> = ({content, language}) => {
             }
             case 5: {
               return (
-                <li key={key} className = "hidden">
+                <li key={key}>
                   <p>
                     {content[language][key]}
                   </p>
@@ -52,8 +52,9 @@ const Presentation: FC<PresentationProps> = ({content, language}) => {
               );
             }
             case 7: {
+              console.log(images[language][key]);
               return (
-                <div key={key} className="image-holder hidden">
+                <div key={key} className="image-holder">
                   <img src={images[language][key]}></img>
                 </div>
               )

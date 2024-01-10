@@ -1,17 +1,17 @@
 // const reader = new FileReader();
 
 //the paths below refer to Presentation.tsx location
-const bacenPathPort = '../../../public/png//BACEN_pt-br.png'
-const igpmPathPort = '../../../public/png//IGPM_pt-br.png'
-const igpmTablePathPort = '../../../public/png//IGPM_table_pt-br.png'
-const ipcaPathPort = '../../../public/png//IPCA_pt-br.png'
-const ipcaTablePathPort = '../../../public/png//IPCA_table_pt-br.png'
+const bacenPathPort = '/png//BACEN_pt-br.png'
+const igpmPathPort = '/png//IGPM_pt-br.png'
+const igpmTablePathPort = '/png//IGPM_table_pt-br.png'
+const ipcaPathPort = '/png//IPCA_pt-br.png'
+const ipcaTablePathPort = '/png//IPCA_table_pt-br.png'
 
-const bacenPathEng = '../../../public/png//BACEN_english.png'
-const igpmPathEng = '../../../public/png//IGPM_english.png'
-const igpmTablePathEng = '../../../public/png//IGPM_table_english.png'
-const ipcaPathEng = '../../../public/png//IPCA_english.png'
-const ipcaTablePathEng = '../../../public/png//IPCA_table_english.png'
+const bacenPathEng = '/png//BACEN_english.png'
+const igpmPathEng = '/png//IGPM_english.png'
+const igpmTablePathEng = '/png//IGPM_table_english.png'
+const ipcaPathEng = '/png//IPCA_english.png'
+const ipcaTablePathEng = '/png//IPCA_table_english.png'
 
 //reading files
 // const bacen = reader.readAsDataURL(bacenPath);
