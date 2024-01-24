@@ -91,8 +91,8 @@ const App: FC = () => {
         </header>
         <main>
           <Routes>
-            <Route path='/about' element={<About content={aboutContent} language={language}/>}/>
-            <Route path='/presentation' element={<Presentation content={presentationContent} language={language}/>}/>
+            <Route path='inflation-predictions/about' element={<About content={aboutContent} language={language}/>}/>
+            <Route path='inflation-predictions/presentation' element={<Presentation content={presentationContent} language={language}/>}/>
           </Routes>
         </main>
     </Router>
