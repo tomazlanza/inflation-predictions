@@ -1,5 +1,5 @@
 import { FC } from "react";
-import images from '../../base64_images/base64_images.ts';
+import images from '../../images_paths/images_paths.ts';
 
 interface PresentationProps {
   content: { 

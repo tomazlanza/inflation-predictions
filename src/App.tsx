@@ -43,7 +43,7 @@ const App: FC = () => {
 
   const downloadFiles = () => {
     const link = document.createElement('a');
-    link.href = './public/inflation_predictions_files.zip';
+    link.href = '../inflation_predictions_files.zip';
     link.download = 'inflation_predictions_files.zip';
     link.click();
     link.remove();
@@ -52,23 +52,23 @@ const App: FC = () => {
 
 
   ///// scroll-observing object to allow fade-in animations ////
-  const observer = new IntersectionObserver((allElements) => {
-    allElements.forEach((element) => {
-      console.log(element);
-      element.isIntersecting ? element.target.classList.add('show') : null;
-     }
-    )
-   }
-  );
+  // const observer = new IntersectionObserver((allElements) => {
+  //   allElements.forEach((element) => {
+  //     console.log(element);
+  //     element.isIntersecting ? element.target.classList.add('show') : null;
+  //    }
+  //   )
+  //  }
+  // );
 
-  const allElements = document.querySelectorAll('.hidden');
+  // const allElements = document.querySelectorAll('.hidden');
 
-  allElements.forEach(
-    (element) => {
-      console.log(element);
-      observer.observe(element);
-    }
-  );
+  // allElements.forEach(
+  //   (element) => {
+  //     console.log(element);
+  //     observer.observe(element);
+  //   }
+  // );
   /////////////
 
   return (
