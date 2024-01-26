@@ -1,5 +1,5 @@
 import { FC, useState} from 'react'
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom'
 
 import Button from '../src/custom_components/Buttons/Buttons.tsx'
 import aboutContent from './text_contents/about-content.ts'
@@ -43,7 +43,7 @@ const App: FC = () => {
 
   const downloadFiles = () => {
     const link = document.createElement('a');
-    link.href = '../inflation_predictions_files.zip';
+    link.href = 'inflation_predictions_files.zip';
     link.download = 'inflation_predictions_files.zip';
     link.click();
     link.remove();
@@ -91,6 +91,7 @@ const App: FC = () => {
         </header>
         <main>
           <Routes>
+            <Route path='/' element={<Navigate to="/about"/>}/>
             <Route path='/about' element={<About content={aboutContent} language={language}/>}/>
             <Route path='/presentation' element={<Presentation content={presentationContent} language={language}/>}/>
           </Routes>
