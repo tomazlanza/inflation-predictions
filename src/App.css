@@ -96,6 +96,10 @@ a:hover {
   color: var(--button-hover);
 }
 
+a.active {
+  background: rgb(230, 150, 150);
+}
+
 h1 {
   font-size: 1.4rem;
   color: var(--main-details-color);

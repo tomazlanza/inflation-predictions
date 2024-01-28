@@ -1,5 +1,5 @@
 import { FC, useState} from 'react'
-import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Link, NavLink, Navigate } from 'react-router-dom'
 
 import Button from '../src/custom_components/Buttons/Buttons.tsx'
 import aboutContent from './text_contents/about-content.ts'
@@ -75,12 +75,12 @@ const App: FC = () => {
     <Router>
         <header>
           <nav id ='menu'>
-            <Link to='/about' className='page-shifter'>
+            <NavLink to='/' className='page-shifter'>
               {language === 'english' ? 'About' : 'Sobre' }
-            </Link>
-            <Link to='/presentation' className='page-shifter'>
+            </NavLink>
+            <NavLink to='/presentation' className='page-shifter'>
               {language === 'english' ? 'Presentation' : 'Apresentação' }
-            </Link>
+            </NavLink>
             <Button onClick={downloadFiles}>
               Download
             </Button>
@@ -91,9 +91,9 @@ const App: FC = () => {
         </header>
         <main>
           <Routes>
-            <Route path='/' element={<Navigate to="/about"/>}/>
-            <Route path='/about' element={<About content={aboutContent} language={language}/>}/>
+            <Route path='/' element={<About content={aboutContent} language={language}/>}/>
             <Route path='/presentation' element={<Presentation content={presentationContent} language={language}/>}/>
+            <Route path='/about' element={<Navigate to="/"/>}/>
           </Routes>
         </main>
     </Router>
