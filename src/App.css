@@ -2,6 +2,7 @@
 :root {
   --main-bg-color: rgba(255, 255, 0, 0.364);
   --buttons-bg-color: #1a1a1a;
+  --bg-color: rgba(2,0,36,1);
   --main-details-color: rgba(255, 0, 0, 0.852);
   --normal-font-color: rgba(255, 255, 255, 0.87);
   --button-hover: #535bf2;
@@ -15,7 +16,8 @@
   font-weight: 400;
   font-size: 1.1em;
 
-  background: linear-gradient(110deg, var(--button-hover) 0%,  rgba(2,0,36,1) 10% 92%, var(--button-hover) 100%);
+  /* background: linear-gradient(110deg, var(--button-hover) 0%,  rgba(2,0,36,1) 10% 92%, var(--button-hover) 100%); */
+  background: var(--bg-color);
 
   color-scheme: light dark;
   
@@ -50,7 +52,7 @@ header{
 
 main{
   margin-top: 0.8rem;
-  border: 0.01rem solid var(--main-details-color); 
+  border:0.1rem solid var(--main-details-color); 
   padding: 0 2rem;
   /* animation-duration: 2s;
   animation-name: fadein; */
@@ -97,7 +99,8 @@ a:hover {
 }
 
 a.active {
-  background: rgb(230, 150, 150);
+  color: var(--button-hover);
+  border-color: #646cff;
 }
 
 h1 {
