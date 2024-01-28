@@ -1,5 +1,5 @@
 import { FC, useState} from 'react'
-import { BrowserRouter as Router, Route, Routes, Link, NavLink, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, NavLink, Navigate } from 'react-router-dom'
 
 import Button from '../src/custom_components/Buttons/Buttons.tsx'
 import aboutContent from './text_contents/about-content.ts'
