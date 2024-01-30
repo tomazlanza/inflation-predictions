@@ -4,7 +4,6 @@ import {
   Routes,
   BrowserRouter
 } from "react-router-dom";
-import { motion } from "framer-motion"
 import { useState } from "react";
 
 // components
