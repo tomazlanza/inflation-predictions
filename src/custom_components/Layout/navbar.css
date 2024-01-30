@@ -1,0 +1,22 @@
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--buttons-bg-color);
+  z-index: 1;
+  position: fixed;
+  left: 2%;
+  right: 2%;
+}
+
+#menu-holder {
+  background-color: var(--buttons-bg-color);
+  width: fit-content;
+}
+
+@media(max-width: 480px) {
+  nav {
+    grid-template-columns: initial;
+  }
+}
+
+
