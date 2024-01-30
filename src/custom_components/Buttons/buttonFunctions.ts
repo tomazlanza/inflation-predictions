@@ -1,7 +1,6 @@
 // // import { renderPage } from '../../App';
 // import { currentPage, selectedLanguage, languageShifter } from "./Buttons";
 
-
 // interface buttonFunctionsType {
 //   [typeOfFunction: string]: Function;
 // }
@@ -10,7 +9,7 @@
 //   'pageShifter': () => {
 //     renderPage(currentPage, selectedLanguage);
 //   },
-  
+
 //   'downloadFunction': () => {
 //     return;
 //   },

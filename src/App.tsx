@@ -1,21 +1,25 @@
-import { FC, useState} from 'react'
-import { BrowserRouter as Router, Route, Routes, NavLink, Navigate } from 'react-router-dom'
+import { FC, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  NavLink,
+  Navigate,
+} from "react-router-dom";
 
-import Button from '../src/custom_components/Buttons/Buttons.tsx'
-import aboutContent from './text_contents/about-content.ts'
-import presentationContent from './text_contents/presentation-content.ts'
-import './custom_components/Buttons/buttons.css'
-import './App.css'
+import Button from "../src/custom_components/Buttons/Buttons.tsx";
+import aboutContent from "./text_contents/about-content.ts";
+import presentationContent from "./text_contents/presentation-content.ts";
+import "./custom_components/Buttons/buttons.css";
+import "./App.css";
 
 //pages
-import Presentation from './custom_components/Presentation/Presentation.tsx'
-import About from '../src/custom_components/About/About.tsx'
-
+import Presentation from "./custom_components/Presentation/Presentation.tsx";
+import About from "../src/custom_components/About/About.tsx";
 
 ///////////// APP //////////////////////
 const App: FC = () => {
-
-  const [language, setLanguage] = useState('english');
+  const [language, setLanguage] = useState("english");
   // const [initialLoad, setInitialLoad] = useState(true);
   // const navigate = useNavigate();
 
@@ -35,21 +39,18 @@ const App: FC = () => {
   // }, []);
 
   ///// creating functions to be used by nav menu buttons ////
-  const languageShifter = () => {    
-    language === 'english'
-    ? setLanguage('pt-br')
-    : setLanguage('english')
-  }
+  const languageShifter = () => {
+    language === "english" ? setLanguage("pt-br") : setLanguage("english");
+  };
 
   const downloadFiles = () => {
-    const link = document.createElement('a');
-    link.href = 'inflation_predictions_files.zip';
-    link.download = 'inflation_predictions_files.zip';
+    const link = document.createElement("a");
+    link.href = "inflation_predictions_files.zip";
+    link.download = "inflation_predictions_files.zip";
     link.click();
     link.remove();
-  }
+  };
   ////////////
-
 
   ///// scroll-observing object to allow fade-in animations ////
   // const observer = new IntersectionObserver((allElements) => {
@@ -73,34 +74,39 @@ const App: FC = () => {
 
   return (
     <Router>
-        <header>
-          <nav id ='menu'>
-            <NavLink to='/' className='page-shifter'>
-              {language === 'english' ? 'About' : 'Sobre' }
-            </NavLink>
-            <NavLink to='/presentation' className='page-shifter'>
-              {language === 'english' ? 'Presentation' : 'Apresentação' }
-            </NavLink>
-            <Button onClick={downloadFiles}>
-              Download
-            </Button>
-            <Button onClick={languageShifter}>
-              {language === 'english' ? 'Portuguese version' : 'Versão em inglês' }
-            </Button>
-          </nav>
-        </header>
-        <main>
-          <Routes>
-            <Route path='/' element={<About content={aboutContent} language={language}/>}/>
-            <Route path='/presentation' element={<Presentation content={presentationContent} language={language}/>}/>
-            <Route path='/about' element={<Navigate to="/"/>}/>
-          </Routes>
-        </main>
+      <header>
+        <nav id="menu">
+          <NavLink to="/" className="page-shifter">
+            {language === "english" ? "About" : "Sobre"}
+          </NavLink>
+          <NavLink to="/presentation" className="page-shifter">
+            {language === "english" ? "Presentation" : "Apresentação"}
+          </NavLink>
+          <Button onClick={downloadFiles}>Download</Button>
+          <Button onClick={languageShifter}>
+            {language === "english" ? "Portuguese version" : "Versão em inglês"}
+          </Button>
+        </nav>
+      </header>
+      <main>
+        <Routes>
+          <Route
+            path="/"
+            element={<About content={aboutContent} language={language} />}
+          />
+          <Route
+            path="/presentation"
+            element={
+              <Presentation content={presentationContent} language={language} />
+            }
+          />
+          <Route path="/about" element={<Navigate to="/" />} />
+        </Routes>
+      </main>
     </Router>
-  )
-}
+  );
+};
 
 //////////////////////////////////////////
-
 
 export default App;
