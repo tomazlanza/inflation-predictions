@@ -3,11 +3,11 @@
 
 ## Initial intent and app design choice
 
-This project has its initially-loaded HTML to a minimum amount, with all of its content being further dynamically rendered as user-chosen states change.
+Studying project on Single-Page Applications and Client-Side Routing using React. Its initially-loaded HTML is set to a minimum amount, with all of its content being further dynamically rendered as user-chosen states change.
 
 ## About its content
 
-As detailed on the application's About page, the content presented on the website consists in an evaluation of models of both of Brazil’s main inflation indexes. 
+As detailed on the app About page, the content presented on the website consists in an evaluation of models of both of Brazil’s main inflation indexes. 
 
 The entire report, with a still partial translation to English, along with the R scripts developed for the task, is available for download inside a zip file.
 
