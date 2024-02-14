@@ -18,5 +18,8 @@ One can download the *inflation_predictions_files.zip* either directly from this
 * Create a new folder;
 
 * Run the following code:
-  ``` git clone https://github.com/tomazlanza/inflation-predictions  npm run dev ```
+
+  ``` git clone https://github.com/tomazlanza/inflation-predictions ```
+  
+  ``` npm run dev ```
 
