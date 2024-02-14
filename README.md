@@ -15,11 +15,11 @@ One can download the *inflation_predictions_files.zip* either directly from this
 
 ## Instructions for running the page locally
 
-* Create a new folder;
+* Create a new folder to store the project;
 
 * Run the following code:
 
   ``` git clone https://github.com/tomazlanza/inflation-predictions ```
   
-  ``` npm run dev ```
+  ``` npm run dev ```.
 
