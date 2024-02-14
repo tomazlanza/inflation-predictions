@@ -15,7 +15,7 @@ The entire report, with a still partial translation to English, along with the R
 
 One can download the *inflation_predictions_files.zip* either directly from this repo or by running locally the application, as further explained, and by clicking on the “Download” button from the top menu.
 
-## Instructions for running the page locally
+## Running the page locally
 
 * Create a new folder to store the project;
 
