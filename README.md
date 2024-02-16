@@ -29,4 +29,4 @@ One can download the *inflation_predictions_files.zip* either directly from this
 
   ``` npm run dev ```
 
-* Access the app at the (default address) **localhost:5173** on your browser. 
+* Access the app at the (default address) **localhost:5173** in a browser.
