@@ -31,4 +31,4 @@ On a CLI, execute the following commands:
 
   ``` npm run dev ```
 
-* Access the app at the (default address) **localhost:5173** in a browser.
+* Access the app at the **localhost:5173** in a browser - as a default, but one should change the 5173 port reference accordingly to the one being used.
