@@ -23,7 +23,7 @@ On a CLI, execute the following commands:
 
   ``` git clone https://github.com/tomazlanza/inflation-predictions ```
 
-* Install its dependencies:
+* Inside the project folder, install the required dependencies:
 
   ``` npm install ```
 
@@ -31,4 +31,4 @@ On a CLI, execute the following commands:
 
   ``` npm run dev ```
 
-* Access the app at the **localhost:5173** in a browser - _as a default, but one should change the 5173 port reference accordingly to the one being used_.
+* Access the app at the **localhost:5173** in a browser - _as a default, but one should change the 5173 port reference accordingly to which one is being used_.
