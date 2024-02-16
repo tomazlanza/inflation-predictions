@@ -17,6 +17,8 @@ One can download the *inflation_predictions_files.zip* either directly from this
 
 ## Run the page locally
 
+On a CLI, execute the following commands:
+
 * Clone this repo to your computer:
 
   ``` git clone https://github.com/tomazlanza/inflation-predictions ```
