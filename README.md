@@ -15,19 +15,23 @@ The entire report, with a still partial translation to English, along with the R
 
 One can download the *inflation_predictions_files.zip* either directly from this repo or by running locally the application, as further explained, and by clicking on the “Download” button from the top menu.
 
-## Run the page locally
+## Local setup instructions
 
-On a CLI, execute the following commands:
+To run the page locally, follow these steps:
+
+* Ensure Node.js and npm are installed on your system.
 
 * Clone this repo to your computer:
 
   ``` git clone https://github.com/tomazlanza/inflation-predictions ```
 
-* Inside the project folder, install the required dependencies:
+* Navigate to the project folder and install the required dependencies:
+
+  ``` cd inflation-predictions ```
 
   ``` npm install ```
 
-* Run locally the app through its Vite dev dependency:
+* Run locally the app using its Vite dev dependency:
 
   ``` npm run dev ```
 
