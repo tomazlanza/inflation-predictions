@@ -32,3 +32,19 @@ On a CLI, execute the following commands:
   ``` npm run dev ```
 
 Then, access the app at **localhost:5173** in a browser - _as a default address, but one should change the 5173 port reference accordingly to which one is being used_.
+
+## Technical evaluation of the project
+
+Below is an assessment on technical aspects of the project.
+
+### Pros
+
+As a Single-Page Application, the page minimizes the need for additional server requests after the initial loading of the compiled JS bundle. This approach can enhance user experience by reducing page load times and improving responsiveness.
+
+### Cons
+
+However, there is a risk that the page may not be effectively indexed by search engines if the compiled JS bundle fails to load quickly.
+
+Since the HTML content is generated dynamically post-load, search engines may not accurately capture the page content, potentially affecting its visibility in search results.
+
+One way to mitigate this issue is to ensure other good Search Engine Optimization (SEO) practices, such as using meaningful HTML elements and meta tags whenever possible.
