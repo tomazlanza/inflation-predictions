@@ -1,8 +1,6 @@
 
 # Inflation predictions website
 
-## Initial intent and app design choice
-
 Studying project on Single-Page Applications and Client-Side Routing using React. 
 
 Its initially loaded HTML is set to a minimum amount, with all of its content being further dynamically rendered as user-chosen states change.
